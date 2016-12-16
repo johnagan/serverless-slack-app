@@ -6,24 +6,24 @@
 1. Create a new [Slack App](api.slack.com/apps/new)
 2. Set-up your [AWS Credentials](./docs/providers/aws/guide/credentials.md)
 3. Install [Serverless.js](https://serverless.com)
-```
-npm install -g serverless
-```
+  ```
+  npm install -g serverless
+  ```
 4. Install The Serverless Slack App Template
-```
-serverless install --url https://github.com/johnagan/serverless-slack-app --path my-app-name
-cd my-app-name
-npm install
-```
+  ```
+  serverless install --url https://github.com/johnagan/serverless-slack-app --path my-app-name
+  cd my-app-name
+  npm install
+  ```
 5. Update the [serverless.yml](serverless.yml) with your new Slack App keys
 6. Provision all AWS services and deploy your App to Lambda
-```
-serverless deploy
-```
+  ```
+  serverless deploy
+  ```
 7. Use the generated **GET** url for Slack's OAuth callback and to install the App
 8. Use the generated **POST** url for Slack's slash commands, events, and interactive messages
 9. Run deploy again and install the App
-```
-serverless deploy
-```
+  ```
+  serverless deploy
+  ```
 10. Test the App by running `/greet`
