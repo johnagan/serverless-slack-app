@@ -40,7 +40,8 @@ Slack | Serverless
 1. Goto the **GET** url provided from serverless (above)
 2. Walk through the OAuth flow and install the App
 3. Goto the team and test the slash command `/greet`
-4. :boom:
+4. Open [the bot source code](src/index.js) and rewrite it as desired
+5. Run `serverless deploy` to deploy your changes to AWS
 
 ![serverless-slack-app-install](https://cloud.githubusercontent.com/assets/35968/21295096/49648982-c502-11e6-912f-c287b82da3a1.gif)
 
