@@ -44,7 +44,7 @@ Create a serverless Slack App with AWS Lambda, API Gateway, DynamoDB, and CloudF
 3. Walk through the OAuth flow and install the App
 4. Goto the team and test the slash command `/greet`
 
-## Update the code
+## Update the Code
 ```javascript
 
 // Slash Command handler
