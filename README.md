@@ -37,11 +37,11 @@ Slack | Serverless
 
 
 ## Install the Slack App and test
-1. Goto the *GET* url provided from serverless (above)
+1. Goto the **GET** url provided from serverless (above)
 2. Walk through the OAuth flow and install the App
 3. Goto the team and test the slash command `/greet`
 4. :boom:
 
 ![serverless-slack-app-install](https://cloud.githubusercontent.com/assets/35968/21295096/49648982-c502-11e6-912f-c287b82da3a1.gif)
 
-2. Use the generated **GET** url for Slack's OAuth callback and to install the App
+_All the tokens and urls above were invalidated before posting this tutorial. You will need to use your own tokens to test_
