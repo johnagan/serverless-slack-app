@@ -28,24 +28,24 @@
 2. Use the generated **POST** url for Slack's slash commands, events, and interactive messages
 3. Update the [serverless.yml](serverless.yml) with your new Slack App keys
 
-Slack | Serverless
+[Slack](https://api.slack.com/apps) | [Serverless](serverless.yml)
 :---:|:---:
-![screen shot 2016-12-18 at 9 04 04 am](https://cloud.githubusercontent.com/assets/35968/21295094/49605452-c502-11e6-9d19-96680cd39858.png) | ![screen shot 2016-12-18 at 9 04 30 am](https://cloud.githubusercontent.com/assets/35968/21295097/49707ac6-c502-11e6-8a4d-ec2f35a1e744.png)
+![slack-app-keys](https://cloud.githubusercontent.com/assets/35968/21295094/49605452-c502-11e6-9d19-96680cd39858.png) | ![serverless-keys](https://cloud.githubusercontent.com/assets/35968/21295097/49707ac6-c502-11e6-8a4d-ec2f35a1e744.png)
 
-4. Run deploy again and install the App
-  
-  ```
-  serverless deploy
-  ```
 
 
 ## Install the Slack App and test
 ![serverless-slack-app-install](https://cloud.githubusercontent.com/assets/35968/21295096/49648982-c502-11e6-912f-c287b82da3a1.gif)
 
-1. Goto the **GET** url provided from serverless (above)
-2. Walk through the OAuth flow and install the App
-3. Goto the team and test the slash command `/greet`
-4. Open [the bot source code](src/index.js) and rewrite it as desired
-5. Run `serverless deploy` to deploy your changes to AWS
+1. Deploy the changes to AWS
+  
+  ```
+  serverless deploy
+  ```
+2. Navigate to the **GET** url provided from serverless
+3. Walk through the OAuth flow and install the App
+4. Goto the team and test the slash command `/greet`
+5. Open [the bot source code](src/index.js) and rewrite it as desired
+6. Run `serverless deploy` to deploy your changes to AWS
 
 _All the tokens and urls above were invalidated before posting this tutorial. You will need to use your own tokens_
