@@ -13,12 +13,12 @@
 4. Install The Serverless Slack App Template
 
   ```
-  serverless install --url https://github.com/johnagan/serverless-slack-app --path my-app-name
-  cd my-app-name
+  serverless install --url https://github.com/johnagan/serverless-slack-app
+  cd serverless-slack-app
   npm install
   ```
 5. Update the [serverless.yml](serverless.yml) with your new Slack App keys
-6. Provision all AWS services and deploy your App to Lambda
+6. Provision all AWS services and deploy your App to Lambda to get the urls for Slack
   
   ```
   serverless deploy
