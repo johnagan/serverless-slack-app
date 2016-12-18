@@ -43,7 +43,45 @@ Create a serverless Slack App with AWS Lambda, API Gateway, DynamoDB, and CloudF
 2. Navigate to the **GET** url provided from serverless
 3. Walk through the OAuth flow and install the App
 4. Goto the team and test the slash command `/greet`
-5. Open [the bot source code](src/index.js) and rewrite it as desired
-6. Run `serverless deploy` to deploy your changes to AWS
+
+## Update the code
+```javascript
+
+// Slash Command handler
+slack.on('/greet', (msg, bot) => {
+  let message = {
+    text: "How would you like to greet the channel?",
+    attachments: [{
+      fallback: 'actions',
+      callback_id: "greetings_click",
+      actions: [
+        { type: "button", name: "Wave", text: ":wave:", value: ":wave:" },
+        { type: "button", name: "Hello", text: "Hello", value: "Hello" },
+        { type: "button", name: "Howdy", text: "Howdy", value: "Howdy" },
+        { type: "button", name: "Hiya", text: "Hiya", value: "Hiya" }
+      ]
+    }]
+  };
+
+  // ephemeral reply
+  bot.replyPrivate(message); 
+});
+
+
+// Interactive Message handler
+slack.on('greetings_click', (msg, bot) => {
+  let message = { 
+    // selected button value
+    text: msg.actions[0].value 
+  };  
+
+  // public reply
+  bot.reply(message);
+});
+```
+1. Open [the bot source code](src/index.js)
+2. Add/Remove/Update the code with your bot functionality
+3. Run `serverless deploy` to deploy your changes to AWS
+4. Rinse and repeat.
 
 _All the tokens and urls above were invalidated before posting this tutorial. You will need to use your own tokens_
