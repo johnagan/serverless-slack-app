@@ -44,4 +44,4 @@ Slack | Serverless
 
 ![serverless-slack-app-install](https://cloud.githubusercontent.com/assets/35968/21295096/49648982-c502-11e6-912f-c287b82da3a1.gif)
 
-_All the tokens and urls above were invalidated before posting this tutorial. You will need to use your own tokens to test_
+_All the tokens and urls above were invalidated before posting this tutorial. You will need to use your own tokens_
