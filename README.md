@@ -34,7 +34,7 @@
 
 
 
-## Install the Slack App and test
+## Install the Slack App and Test
 ![serverless-slack-app-install](https://cloud.githubusercontent.com/assets/35968/21295096/49648982-c502-11e6-912f-c287b82da3a1.gif)
 
 1. Deploy the changes to AWS `serverless deploy`
