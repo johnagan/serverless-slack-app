@@ -23,6 +23,7 @@
     "url": "https://github.com/johnagan/serverless-slack-app/issues"
   },
   "dependencies": {
+    "aws-sdk": "^2.536.0",
     "serverless-slack": "^1.0.25"
   }
 }
