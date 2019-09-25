@@ -16,7 +16,7 @@ Create a serverless Slack App with AWS Lambda, API Gateway, DynamoDB, and CloudF
 3. Install The Serverless Slack App Template and provision all AWS services
 
   ```
-  serverless install --url https://github.com/johnagan/serverless-slack-app
+  serverless install --url https://github.com/timchiu/serverless-slack-app
   cd serverless-slack-app
   npm install
   serverless deploy
