@@ -1,3 +1,4 @@
 node_modules
 .serverless
 .DS_Store
+serverless.yml
