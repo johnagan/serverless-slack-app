@@ -5,7 +5,7 @@ const slack = require('serverless-slack');
 
 // Set up AWS interface
 const AWS = require('aws-sdk');
-AWS.config.update({region: 'us-east-1'});
+AWS.config.update({region: 'us-east-2'});
 const sqs = new AWS.SQS({apiVersion: '2012-11-05'});
 const queueUrl = "https://sqs.us-east-2.amazonaws.com/578417282904/CROP.fifo"
 
